@@ -1,0 +1,12 @@
+.custom-menu-primary .hs-menu-wrapper > ul {
+    width: 100%;
+}
+.custom-menu-primary .hs-menu-wrapper > ul > li {
+    width: 16.666%; /* Update this to your unique number */
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .custom-menu-primary .hs-menu-wrapper > ul > li {
+        width: auto;
+    }    
+}
