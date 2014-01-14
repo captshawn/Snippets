@@ -1,0 +1,9 @@
+.header-container .hs-menu-flow-horizontal > ul > li > a {
+    overflow: visible!important;
+    max-width:none!important;
+    white-space: normal!important;
+}
+.header-container .hs-menu-flow-horizontal > ul > li > a span{
+ display:block;
+ text-transform: lowercase;
+}

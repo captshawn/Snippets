@@ -1,0 +1,6 @@
+.custom-menu-primary {
+	text-align: center;
+}
+.custom-menu-primary ul {
+	text-align: center; /* change this to your desired menu item text alignment */
+}
