@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Nine Columns
+   ========================================================================== */   
+/*-- Equal Nine Columns Wrapper --*/
+.nine-col-wrapper  {
+    margin: 0 -1.282051282% !important;
+    float: none !important;
+    width: auto !important;
+}
+.nine-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+     width: 8.54700854711111%;
+     margin: 0 1.282051282% !important;
+}
+@media(max-width: 767px){
+     /*-- Equal Nine Columns Wrapper --*/
+     .nine-col-wrapper,
+     .nine-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+          margin-left: 0 !important;
+         margin-right: 0 !important;
+         width: 100% !important;
+     }
+}   

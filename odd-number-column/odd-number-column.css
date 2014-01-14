@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Five Columns
+   ========================================================================== */
+/*-- Equal Five Columns Wrapper --*/
+.five-col-wrapper  {
+    margin: 0 -1.282051282% !important;
+    float: none !important;
+    width: auto !important;
+}
+.five-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+     width: 17.435897436%;
+     margin: 0 1.282051282% !important;
+}
+@media(max-width: 767px){
+     /*-- Equal Five Columns Wrapper --*/
+     .five-col-wrapper,
+     .five-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+          margin-left: 0 !important;
+         margin-right: 0 !important;
+         width: 100% !important;
+     }
+}

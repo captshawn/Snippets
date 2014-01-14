@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Seven Columns
+   ========================================================================== */   
+/*-- Equal Seven Columns Wrapper --*/
+.seven-col-wrapper  {
+    margin: 0 -1.282051282% !important;
+    float: none !important;
+    width: auto !important;
+}
+.seven-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+     width: 11.72161172171429%;
+     margin: 0 1.282051282% !important;
+}
+@media(max-width: 767px){
+     /*-- Equal Seven Columns Wrapper --*/
+     .seven-col-wrapper,
+     .seven-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
+          margin-left: 0 !important;
+         margin-right: 0 !important;
+         width: 100% !important;
+     }
+}
