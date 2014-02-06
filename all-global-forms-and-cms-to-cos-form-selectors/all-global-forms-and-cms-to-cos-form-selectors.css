@@ -1,0 +1,76 @@
+/* ALL Global Forms & Migrated CMS to COS Form Selectors
+   ========================================================================== */
+
+/* Form Wrapper */
+body .hs-form-field,
+div.ContactFormWrapper {}
+
+/* Field Wrapper */
+div.ContactFormWrapper .ContactFormItem,
+body .hs-form-field {}
+
+/* Global Label */
+body label,
+div.ContactFormWrapper label {}
+
+/* Global Input */
+div.ContactFormWrapper input,
+body input[type="text"],
+body input[type="password"], 
+body input[type="datetime"], 
+body input[type="datetime-local"], 
+body input[type="date"], 
+body input[type="month"], 
+body input[type="time"], 
+body input[type="week"], 
+body input[type="number"], 
+body input[type="email"], 
+body input[type="url"], 
+body input[type="search"], 
+body input[type="tel"], 
+body input[type="color"] {}
+
+div.ContactFormWrapper input:focus,
+body input[type="text"]:focus,
+body input[type="password"]:focus, 
+body input[type="datetime"]:focus, 
+body input[type="datetime-local"]:focus, 
+body input[type="date"]:focus, 
+body input[type="month"]:focus, 
+body input[type="time"]:focus, 
+body input[type="week"]:focus, 
+body input[type="number"]:focus, 
+body input[type="email"]:focus, 
+body input[type="url"]:focus, 
+body input[type="search"]:focus, 
+body input[type="tel"]:focus, 
+body input[type="color"]:focus {}
+
+/* Textarea */
+div.ContactFormWrapper textarea,
+body textarea {}
+
+div.ContactFormWrapper textarea:focus,
+body textarea:focus {}
+
+/* Multiple Choice */
+div.ContactFormWrapper .CheckboxGroupContainer,
+div.ContactFormWrapper .RadioGroupContainer,
+body form.hs-form .hs-form-field ul.inputs-list {}
+
+div.ContactFormWrapper .CheckboxGroupContainer input,
+div.ContactFormWrapper .RadioGroupContainer input,
+body input[type="radio"],
+body input[type="checkbox"],
+body form.hs-form .hs-form-field ul.inputs-list li input {}
+
+div.ContactFormWrapper div.CheckboxGroupContainer label,
+div.ContactFormWrapper div.RadioGroupContainer label,
+body form.hs-form .hs-form-field ul.inputs-list li label {}
+
+/* Select Menu */
+div.ContactFormWrapper select,
+body select {}
+
+div.ContactFormWrapper select:focus,
+body select:focus {}

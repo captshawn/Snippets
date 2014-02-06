@@ -1,4 +1,4 @@
-/* CMS to COS Form Selectors
+/* Migrated CMS to COS Form Selectors
    ========================================================================== */
 
 
@@ -13,22 +13,22 @@ div.ContactFormWrapper label {}
 
 /* Global Input */
 div.ContactFormWrapper input {}
+div.ContactFormWrapper input:focus {}
 
 /* Textarea */
 div.ContactFormWrapper textarea {}
+div.ContactFormWrapper textarea:focus {}
 
-/* Checkbox */
-div.ContactFormWrapper .CheckboxGroupContainer {}
-div.ContactFormWrapper .CheckboxGroupContainer input {}
-div.ContactFormWrapper div.CheckboxGroupContainer label {}
-
-/* Radio */
+/* Multiple Choice */
+div.ContactFormWrapper .CheckboxGroupContainer,
 div.ContactFormWrapper .RadioGroupContainer {}
+
+div.ContactFormWrapper .CheckboxGroupContainer input,
 div.ContactFormWrapper .RadioGroupContainer input {}
+
+div.ContactFormWrapper div.CheckboxGroupContainer label,
 div.ContactFormWrapper div.RadioGroupContainer label {}
 
 /* Select Menu */
 div.ContactFormWrapper select {}
-
-/* Submit Button */
-div.ContactFormWrapper .FormSubmitButton {}
+div.ContactFormWrapper select:focus {}

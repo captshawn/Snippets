@@ -1,0 +1,17 @@
+/* ALL Global Buttons & Migrated CMS to COS Buttons
+   ========================================================================== */
+
+div.ContactFormWrapper .FormSubmitButton,
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {}
+
+div.ContactFormWrapper .FormSubmitButton:hover,
+body .hs-button.primary:hover,
+body input[type="submit"]:hover,
+body input[type="button"]:hover {}
+
+div.ContactFormWrapper .FormSubmitButton:focus,
+body .hs-button.primary:focus,
+body input[type="submit"]:focus,
+body input[type="button"]:focus {} {}

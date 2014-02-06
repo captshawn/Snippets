@@ -1,0 +1,6 @@
+/* Migrated CMS to COS Buttons
+   ========================================================================== */
+
+div.ContactFormWrapper .FormSubmitButton {}
+div.ContactFormWrapper .FormSubmitButton:hover {}
+div.ContactFormWrapper .FormSubmitButton:focus {}
