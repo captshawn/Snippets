@@ -1,0 +1,34 @@
+/* CMS to COS Form Selectors
+   ========================================================================== */
+
+
+/* Form Wrapper */
+div.ContactFormWrapper{}
+
+/* Field Wrapper */
+div.ContactFormWrapper .ContactFormItem {}
+
+/* Global Label */
+div.ContactFormWrapper label {}
+
+/* Global Input */
+div.ContactFormWrapper input {}
+
+/* Textarea */
+div.ContactFormWrapper textarea {}
+
+/* Checkbox */
+div.ContactFormWrapper .CheckboxGroupContainer {}
+div.ContactFormWrapper .CheckboxGroupContainer input {}
+div.ContactFormWrapper div.CheckboxGroupContainer label {}
+
+/* Radio */
+div.ContactFormWrapper .RadioGroupContainer {}
+div.ContactFormWrapper .RadioGroupContainer input {}
+div.ContactFormWrapper div.RadioGroupContainer label {}
+
+/* Select Menu */
+div.ContactFormWrapper select {}
+
+/* Submit Button */
+div.ContactFormWrapper .FormSubmitButton {}
