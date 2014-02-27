@@ -7,4 +7,6 @@ You can rearrange the html however you'd like in order to match your portal, and
 
 You can change the appearance of the month, day, and year by changing the value in the strftime() method.  The following is a reference guide for all possible date values: http://docs.python.org/2/library/datetime.html#strftime-strptime-behavior 
 
+Below is a screenshot of a hubSpot blog date using the custom formatting. This is using the HTML from this snippet.
+
 ![alt tag](date-screenshot.png) 
