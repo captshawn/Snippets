@@ -7,4 +7,4 @@ You can rearrange the html however you'd like in order to match your portal, and
 
 You can change the appearance of the month, day, and year by changing the value in the strftime() method.  The following is a reference guide for all possible date values: http://docs.python.org/2/library/datetime.html#strftime-strptime-behavior 
 
-!(http://cdn2.hubspot.net/hub/60145/file-545321549-png/Screen_Shot_2014-02-27_at_3.09.30_PM.png) 
+!(https://github.com/captshawn/Snippets/blob/master/custom-date-formatting/date-screenshot.png) 
