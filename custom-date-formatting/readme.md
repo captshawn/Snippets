@@ -1,7 +1,7 @@
 Custom Date Formatting
 ==============================================================
 
-In your Blog template, click "Edit Options" for the "Blog Content" module, and for both the Blog post body template HTML and the Blog listing template HTML replace "{{ content.publish_date_localized }}" with the following code with the html in "custom-date-formatting.html".
+In your Blog template, click "Edit Options" for the "Blog Content" module, and for both the Blog post body template HTML and the Blog listing template HTML replace "{{ content.publish_date_localized }}" with the html located in "custom-date-formatting.html".
 
 You can rearrange the html however you'd like in order to match your portal, and you can style it using CSS.  
 
