@@ -1,12 +1,8 @@
 Custom Date Formatting
 ==============================================================
 
-In your Blog Template, click "Edit Options" for the "Blog Content" module, and for both the Blog post body template HTML and the Blog listing template HTML textboxes replace the following code with the html in "custom-date-formatting.html":
+In your Blog template, click "Edit Options" for the "Blog Content" module, and for both the Blog post body template HTML and the Blog listing template HTML replace "{{ content.publish_date_localized }}" with the following code with the html in "custom-date-formatting.html".
 
-<p>
-    {{ content.publish_date_localized }}
-</p>
+You can rearrange the html however you'd like in order to match your portal, and you can style it using CSS.  
 
-Rearrange the html as you'd like and style it using CSS.  
-
-You can change the appearance of the month, day, and year by changing the value of the strftime() method.  The following is a reference guide for all possible values: http://docs.python.org/2/library/datetime.html#strftime-strptime-behavior  
+You can change the appearance of the month, day, and year by changing the value in the strftime() method.  The following is a reference guide for all possible date values: http://docs.python.org/2/library/datetime.html#strftime-strptime-behavior  
