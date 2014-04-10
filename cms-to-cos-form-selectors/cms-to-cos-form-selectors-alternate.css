@@ -1,0 +1,85 @@
+.ContactFormWrapper 
+{
+    
+}
+
+.ContactFormWrapper label 
+{
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+    
+}
+
+.ContactFormWrapper .CheckboxGroupContainer {
+  text-align: left;
+}
+
+.ContactFormWrapper .CheckboxGroupContainer label 
+{
+    display: inline;
+    
+    
+}
+.ContactFormWrapper .CheckboxGroupContainer input 
+{
+    vertical-align: middle;
+    
+    
+}
+
+.ContactFormWrapper .FormSubmitButton
+{
+    display: block;
+    margin-top: 8px;
+    
+}
+.ContactFormWrapper .fieldclear
+{
+    clear: both;
+}
+
+.ContactFormWrapper .hs-form-field {
+
+}
+.ContactFormWrapper .hs-form-field textarea {
+    margin-bottom:12px;
+}
+.ContactFormWrapper .hs-form-radio input, .ContactFormWrapper .hs-form-checkbox input {
+    display: inline;
+    width: 20px;
+    vertical-align: -11%;
+}
+.ContactFormWrapper ul.inputs-list, #foxboro_content div.block ul.inputs-list {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px !important;
+    padding:0px 0px 0px 0px !important;
+    line-height: 0px;
+}
+.ContactFormWrapper ul.inputs-list li, #foxboro_content div.block ul.inputs-list li {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    line-height: 0px;
+}
+.ContactFormWrapper .hs-field-desc {
+    color: #666;
+    font-style:italic;
+}
+
+.ContactFormWrapper form.ContactFormItems label {
+    line-height: 14px;
+}
+.ContactFormWrapper .ContactFormItem {
+    margin-bottom: 10px;
+}
+
+.ContactFormWrapper .hs-form-booleancheckbox {
+    
+}
+.ContactFormWrapper .hs-form-booleancheckbox input {
+    width: auto;
+    margin: 0px 5px 0px 0px;
+    vertical-align: -11%;
+    font-weight:normal;
+}
