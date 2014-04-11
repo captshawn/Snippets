@@ -18,14 +18,12 @@
 .ContactFormWrapper .CheckboxGroupContainer label 
 {
     display: inline;
-    
-    
 }
 .ContactFormWrapper .CheckboxGroupContainer input 
 {
     vertical-align: middle;
-    
-    
+    width: auto;
+    max-width:100%;
 }
 
 .ContactFormWrapper .FormSubmitButton
