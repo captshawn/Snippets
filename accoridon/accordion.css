@@ -13,8 +13,9 @@
 
 .accordion_header{
 	cursor: pointer;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
 	width: 100%;
 	padding: 10px 15px;
 }
