@@ -5,11 +5,13 @@
 
         // Initially hide all accordion content
         $accordion.find('.accordion_content').hide();
+        // Initially display the accordion content with .expanded class
+        $accordion.find('.accordion_content.expanded').show();
 
         $accordion.find('.accordion_header').click(function(){
 
             // Hide the displayed sibling accordion content so only one appears at a time
-               $(this).parent().siblings().children('accordion_header').removeClass('expanded').next('.accordion_content').stop(true,true).slideUp();
+               $(this).parent().siblings().children('.accordion_header').removeClass('expanded').next('.accordion_content').stop(true,true).slideUp();
 
             if($(this).next('.accordion_content').is(':hidden')){
                 // Display the accordion content if it is not displayed
