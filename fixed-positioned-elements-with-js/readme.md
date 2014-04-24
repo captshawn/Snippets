@@ -1,4 +1,4 @@
-Fixed Positioned Element with Javascript
+Fixed Positioned Elements with Javascript
 ================================================
 This snippet will show you how to set any element on your page to have 'fixed' positioning once that element reaches the top of the page on window scroll.
 
