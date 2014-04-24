@@ -1,0 +1,8 @@
+/*  Add to stylesheet in comments section */
+.custom_listing_comments{
+    display: block;
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    line-height: 165%;
+    margin-top: 10px;
+}
