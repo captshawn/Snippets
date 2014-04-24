@@ -1,0 +1,4 @@
+/* Fixed Element */
+body.fixed .fixed-element {
+	position: fixed;
+}
