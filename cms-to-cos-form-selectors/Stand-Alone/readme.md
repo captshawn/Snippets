@@ -4,12 +4,12 @@ Portals that have been migrated over from the CMS using the CMS to COS Migration
 
 These snippets will lay out all available form & button selectors for these migrated forms.
 
-1) For cms-to-cos-form-selectors.css
+Step 1
 ------------------------------------
-In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "Google Search Form" sub section.  Add the contents of this snippet AFTER that sub section.
+In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "Google Search Form" sub section.  Add the contents of Forms CSS AFTER that sub section.
 
 
-2) For cms-to-cos-buttons.css
+Step 2
 -----------------------------
-In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "CTA Buttons" sub section.  Add the contents of this snippet AFTER that sub section.
+In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "CTA Buttons" sub section.  Add the contents of Buttons CSS AFTER that sub section.
 

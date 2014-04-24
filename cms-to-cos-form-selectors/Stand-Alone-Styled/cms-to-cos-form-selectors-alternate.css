@@ -1,45 +1,33 @@
-.ContactFormWrapper 
-{
-    
-}
+/* Migrated CMS to COS Form Selectors
+   ========================================================================== */
 
-.ContactFormWrapper label 
-{
+
+.ContactFormWrapper {}
+
+.ContactFormWrapper label {
     display: block;
     margin-bottom: 4px;
-    text-align: left;
-    
+    text-align: left; 
 }
-
 .ContactFormWrapper .CheckboxGroupContainer {
   text-align: left;
 }
-
-.ContactFormWrapper .CheckboxGroupContainer label 
-{
+.ContactFormWrapper .CheckboxGroupContainer label {
     display: inline;
 }
-.ContactFormWrapper .CheckboxGroupContainer input 
-{
+.ContactFormWrapper .CheckboxGroupContainer input {
     vertical-align: middle;
     width: auto;
     max-width:100%;
 }
-
-.ContactFormWrapper .FormSubmitButton
-{
+.ContactFormWrapper .FormSubmitButton {
     display: block;
     margin-top: 8px;
-    
 }
-.ContactFormWrapper .fieldclear
-{
+.ContactFormWrapper .fieldclear {
     clear: both;
 }
-
-.ContactFormWrapper .hs-form-field {
-
-}
+.ContactFormWrapper .hs-form-field {}
 .ContactFormWrapper .hs-form-field textarea {
     margin-bottom:12px;
 }
@@ -64,17 +52,13 @@
     color: #666;
     font-style:italic;
 }
-
 .ContactFormWrapper form.ContactFormItems label {
     line-height: 14px;
 }
 .ContactFormWrapper .ContactFormItem {
     margin-bottom: 10px;
 }
-
-.ContactFormWrapper .hs-form-booleancheckbox {
-    
-}
+.ContactFormWrapper .hs-form-booleancheckbox {}
 .ContactFormWrapper .hs-form-booleancheckbox input {
     width: auto;
     margin: 0px 5px 0px 0px;
