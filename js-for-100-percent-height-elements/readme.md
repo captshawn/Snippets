@@ -1,6 +1,6 @@
-Apply 100 Percent Height on Elements with JS
+Apply 100 Percent Height to Elements with JS
 ================================================
-This snippet will show you how to apply a 100% height on an element with JS.  This should only be used when you have determined that this is not able to be accomplished with CSS alone.
+This snippet will show you how to apply a 100% height to an element with JS.  This should only be used when you have determined that this is not able to be accomplished with CSS alone.
 
 Step 1
 ------
