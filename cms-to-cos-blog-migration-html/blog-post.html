@@ -1,0 +1,47 @@
+<div class="blog-section">
+    <div class="blog-post-wrapper cell-wrapper">
+                <div class="section post-header">
+            <h2>
+                <a href="{{ content.absolute_url }}" id="hubspot-name" class="link hubspot-editable" data-hubspot-form-id="name" data-hubspot-name="Blog Title">{{ content.name }}</a> 
+            </h2>
+            <p id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author" >
+                    <span class="hs-author-label">Posted by</span>
+                    {% if content.blog_post_author %}
+                        <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}
+                        {# {% if content.blog_post_author.avatar %} <div class="hs-author-avatar"> <img width="35 px" src="{{ content.blog_post_author.avatar }}"> </div> {% endif %} #}
+                        {% if content.blog_post_author.has_social_profiles %}
+                            <div class="hs-author-social-section">
+                                <span class="hs-author-social-label">Find me on:</span>
+                                <div class="hs-author-social-links">
+                                    {% if content.blog_post_author.facebook %}
+                                        <a href="{{ content.blog_post_author.facebook }}" target="_blank" class="hs-author-social-link hs-social-facebook">Facebook </a>
+                                    {% endif %}
+                                    {% if content.blog_post_author.linkedin %}
+                                        <a href="{{ content.blog_post_author.linkedin }}" target="_blank" class="hs-author-social-link hs-social-linkedin">LinkedIn</a>
+                                    {% endif %}
+                                    {% if content.blog_post_author.twitter %}
+                                        <a href="{{ content.blog_post_author.twitter }}" target="_blank" class="hs-author-social-link hs-social-twitter">Twitter </a>
+                                    {% endif %}
+                                    {% if content.blog_post_author.google_plus %}
+                                        <a href="{{ content.blog_post_author.google_plus }}?rel=author" target="_blank" class="hs-author-social-link hs-social-google-plus">Google+</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+            </p>
+        </div>
+            {% blog_social_sharing "blog_social_sharing" overrideable=False, label='Blog Social Sharing' %}
+        <div class="section post-body">
+            {{ content.post_body }}
+        </div>
+        {% if content.topic_list %}
+             <p id="hubspot-topic_data" > Topics:
+                {% for topic in content.topic_list %}
+                    <a class="topic-link" href="{{ group.absolute_url }}/topic/{{ topic.slug }}">{{ topic.name }}</a>{% if not loop.last %},{% endif %}
+                {% endfor %}
+             </p>
+        {% endif %}
+
+    </div>
+</div>

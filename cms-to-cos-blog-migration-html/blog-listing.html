@@ -1,0 +1,92 @@
+<div class="blog-section">
+    <div class="blog-listing-wrapper cell-wrapper">
+        {# simple_list_page indicates the "blog/all" page, which is a list of links to every blog post #}
+        <div class="post-listing{% if simple_list_page %}-simple{% endif %}">
+            {% if blog_author %}
+                <div class="hs-author-profile">
+                    <h2 class="hs-author-name">{{ blog_author.display_name }}</h2>
+                    {# {% if blog_author.avatar %} <div class="hs-author-avatar"> <img width="35 px" src="{{ blog_author.avatar }}"> </div> {% endif %} #}
+                    <div class="hs-author-bio">{{ blog_author.bio }}</div>
+                    {% if blog_author.has_social_profiles %}
+                        <div class="hs-author-social-section">
+                            <span class="hs-author-social-label">Find me on:</span>
+                            <div class="hs-author-social-links">
+                                {% if blog_author.facebook %}
+                                    <a href="{{ blog_author.facebook }}" target="_blank" class="hs-author-social-link hs-social-facebook">&nbsp;</a>
+                                {% endif %}
+                                {% if blog_author.linkedin %}
+                                    <a href="{{ blog_author.linkedin }}" target="_blank" class="hs-author-social-link hs-social-linkedin">&nbsp;</a>
+                                {% endif %}
+                                {% if blog_author.twitter %}
+                                    <a href="{{ blog_author.twitter }}" target="_blank" class="hs-author-social-link hs-social-twitter">&nbsp;</a>
+                                {% endif %}
+                                {% if blog_author.google_plus %}
+                                    <a href="{{ blog_author.google_plus }}?rel=author" target="_blank" class="hs-author-social-link hs-social-google-plus">&nbsp;</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                <h3 class="hs-author-listing-header">Recent Posts</h3>
+            {% endif %}
+            {% for content in contents %}
+                <div class="post-item">
+                    {% if not simple_list_page %}
+                        <div class="post-header">
+                            <h2><a href="{{content.absolute_url}}">{{ content.name }}</a></h2>
+                            <p id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+                                Posted by
+                                {%if content.blog_post_author %}
+                                    <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}
+                                {% endif %}
+                            </p>
+                            {% blog_social_sharing "blog_social_sharing" overrideable=False, label='Blog Social Sharing' %}
+                        </div>
+                        <div class="post-body clearfix">
+                            <!--post summary-->
+                            {% if content.post_list_summary_featured_image %}
+                                <div class="hs-featured-image-wrapper">
+                                    <a href="{{content.absolute_url}}" title="" class="hs-featured-image-link">
+                                        <img src="{{ content.post_list_summary_featured_image }}" class="hs-featured-image">
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {{ content.post_list_content|safe }}
+                        {% if content_group.show_summary_in_listing %}
+                            <a class="more-link" href="{{ content.absolute_url }}">Read More</a>
+                        {% endif %}    
+                    </div>
+                    <div class="custom_listing_comments">
+                        {% set comments_number =  content.comment_list|length %}
+                        {% if comments_number == 1 %}
+                            {% set comments_lable = "Comment" %}
+                        {% else %}
+                                {% set comments_lable = "Comments" %}
+                        {% endif %}
+                        {{ comments_number }} {{ comments_lable }} <a href="{{content.absolute_url}}#comments-listing">Click here to read/write comments</a>
+                    </div>
+                        {% if content.topic_list %}
+                             <p id="hubspot-topic_data"> Topics:
+                                {% for topic in content.topic_list %}
+                                    <a class="topic-link" href="{{ group.absolute_url }}/topic/{{ topic.slug }}">{{ topic.name }}</a>{% if not loop.last %},{% endif %}
+                                {% endfor %}
+                             </p>
+                        {% endif %}
+                    {% else %}
+                        <h2 class="post-listing-simple"><a href="{{content.absolute_url}}">{{ content.name }}</a></h2>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="blog-pagination">
+            {% if last_page_num %}
+                <a class="previous-posts-link" href="{{ blog_page_link(last_page_num) }}">Previous</a>
+            {% endif %}
+                <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a>
+            {% if next_page_num %}
+                <a class="next-posts-link" href="{{ blog_page_link(next_page_num) }}">Next</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
