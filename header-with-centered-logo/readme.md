@@ -32,5 +32,5 @@ Add the Mobile CSS to the "max-width: 767px" media query section of the boilerpl
 
 Step 6
 ------
-In the code that was added in step 3 and in 5, update the :nth-child values for ".custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4) > a" so it matches the index of the li that contains the logo.
+In the code that was added in step 3 and in 5 (both desktop and mobile), update the :nth-child values for ".custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4) > a" so it matches the index of the li that contains the logo.
 
