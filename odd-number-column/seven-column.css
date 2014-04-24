@@ -1,7 +1,6 @@
-/* ==========================================================================
-   Seven Columns
-   ========================================================================== */   
-/*-- Equal Seven Columns Wrapper --*/
+/* Seven Columns
+   ========================================================================== */
+
 .seven-col-wrapper  {
     margin: 0 -1.282051282% !important;
     float: none !important;
@@ -12,7 +11,6 @@
      margin: 0 1.282051282% !important;
 }
 @media(max-width: 767px){
-     /*-- Equal Seven Columns Wrapper --*/
      .seven-col-wrapper,
      .seven-col-wrapper > div.row-fluid-wrapper > div.row-fluid > div.widget-span {
           margin-left: 0 !important;
