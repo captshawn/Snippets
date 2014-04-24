@@ -1,18 +1,11 @@
-$(document).ready(function(){
+// Set 100 Percent Height with JS
 
-     // Set Your Variables
-     var element = $('.your-element');
-     var height = $(document).height();
+var element = $('.your-element');
+var height = $(document).height();
 
-     // Set 100% Height Function
-     function setHeight(){
-          element.height(height);
-     }
+function setHeight(){
+     element.height(height);
+}
+setHeight();
+$(window).resize(setHeight);
 
-     // Run the 100% HeightFunction on Document Ready
-     setHeight();
-
-     // Run the 100% Height Function on Browser Resize
-     $(window).resize(setHeight);
-
-});
