@@ -1,0 +1,59 @@
+/** 
+ * Border Radius 
+ *
+ * {#  ex. &#123;&#123; borderRadius("5px") &#125;&#125;;  #} 
+ */
+
+{% macro borderRadius(value) -%} 
+    -webkit-border-radius: &#123;&#123; value &#125;&#125;;
+    -moz-border-radius: &#123;&#123; value &#125;&#125;;
+    -o-border-radius: &#123;&#123; value &#125;&#125;;
+    -ms-border-radius: &#123;&#123; value &#125;&#125;;
+    border-radius: &#123;&#123; value &#125;&#125;;
+{%- endmacro %}
+
+
+/** 
+ * Box Shadow  
+ *
+ * {#  ex. &#123;&#123; boxshadow("1px 1px 1px rgba(0,0,0,0.5)") &#125;&#125;;  #} 
+ */
+
+{% macro boxshadow(value) -%}
+    -webkit-box-shadow: &#123;&#123; value &#125;&#125;;
+    -moz-box-shadow: &#123;&#123; value &#125;&#125;;
+    -o-box-shadow: &#123;&#123; value &#125;&#125;;
+    -ms-box-shadow: &#123;&#123; value &#125;&#125;;
+    box-shadow: &#123;&#123; value &#125;&#125;;
+{%- endmacro %}
+
+
+/** 
+ * Transition
+ * 
+ * {#  ex. &#123;&#123; transition("all 1s ease") &#125;&#125;;  #} 
+ */
+
+{% macro transition(value) -%}
+    -webkit-transition: &#123;&#123; value &#125;&#125;;
+    -moz-transition: &#123;&#123; value &#125;&#125;;
+    -o-transition: &#123;&#123; value &#125;&#125;;
+    -ms-transition: &#123;&#123; value &#125;&#125;;
+    transition: &#123;&#123; value &#125;&#125;;
+{%- endmacro %}
+
+
+/** 
+ * Transform
+ *
+ * {#  ex. &#123;&#123; transform("rotate(45deg)") &#125;&#125;;  #} 
+ */
+ 
+{% macro transform(value) -%}
+    -webkit-transform: &#123;&#123; value &#125;&#125;;
+    -moz-transform: &#123;&#123; value &#125;&#125;;
+    -o-transform: &#123;&#123; value &#125;&#125;;
+    -ms-transform: &#123;&#123; value &#125;&#125;;
+    transform: &#123;&#123; value &#125;&#125;;
+{%- endmacro %}
+
