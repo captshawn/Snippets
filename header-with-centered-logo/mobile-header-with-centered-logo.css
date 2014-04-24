@@ -1,0 +1,10 @@
+/* Menu Items Stack for Mobile */
+.custom-menu-primary .hs-menu-wrapper >ul > li {
+    width: auto;
+    display: block;
+    margin: 0;
+}
+/* Hide Desktop Logo for Mobile */
+.custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4)  { /* use nth child to target the logo link from the site map */
+    display: none;
+}
