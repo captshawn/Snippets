@@ -12,11 +12,11 @@ Within your global header module, create a "Logo" module stacked on top of a "Ho
 
 The "Mobile Logo" module needs a CSS class of "visible-phone".
 
-![alt tag](centered-header-menu-css.png) 
+![alt tag](centered-header-logo-css.png) 
 
 The "Horizontal Top Menu" module needs a CSS class of "custom-menu-primary".
 
-![alt tag](nav-equal-widths.png) 
+![alt tag](custom-menu-primary.png) 
 
 Step 2
 ------
