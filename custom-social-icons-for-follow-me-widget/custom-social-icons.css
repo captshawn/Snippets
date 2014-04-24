@@ -1,10 +1,9 @@
-/* Follow Me Widget */
+/* Follow Me Widget
+   ========================================================================== */
 
-.widget-type-follow_me {
-}
+.widget-type-follow_me {}
 
 /* Global Social Icons Selector */
-
 .widget-type-follow_me .cell-wrapper div span {
      background: url('http://') !important;
      height: 1px !important;
