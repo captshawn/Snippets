@@ -16,10 +16,10 @@ Step 3
 ------
 Select the appropriate class below and apply it as the 'Custom CSS Class' of the module group.
 
--.five-col-wrapper
--.seven-col-wrapper
--.nine-col-wrapper
--.eleven-col-wrapper
+* .five-col-wrapper
+* .seven-col-wrapper
+* .nine-col-wrapper
+* .eleven-col-wrapper
 
 ![alt tag](classes.png) 
 
