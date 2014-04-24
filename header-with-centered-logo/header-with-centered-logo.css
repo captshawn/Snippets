@@ -1,0 +1,38 @@
+/*-- Header Menu With Logo Centered ---*/
+
+
+
+
+/* Menu */
+.custom-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul {
+    width: 100%;
+}
+.custom-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul > li {
+    width: 14.28571%; /* Width is equivalent to 10 divided by the number of items in your site map */
+    text-align: center;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px; /* to offset the added spacing due to inline-block */
+}
+.custom-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul > li > a {
+    padding-right: 0 ;
+    padding-left: 0;
+    max-width: none;
+}
+
+
+
+
+@media (max-width: 767px){
+/* Menu Items Stack for Mobile */
+    .custom-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul > li {
+        width: auto;
+        display: block;
+        margin: 0;
+    }
+    /* Hide Desktop Logo for Mobile */
+    .custom-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul > li:nth-child(4)  { /* use nth child to target the logo link from the site map */
+        display: none;
+    }
+}
