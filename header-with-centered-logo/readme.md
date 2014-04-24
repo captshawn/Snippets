@@ -8,7 +8,7 @@ Step 1
 ------
 Within your global header module, create a "Logo" module stacked on top of a "Horizontal Menu" module. The "Logo" module will display only for mobile, while the "Horizontal Menu" module will display for both desktop and mobile.
 
-![alt tag](centered-header-logo-modules.png) 
+![alt tag](centered-logo-modules.png) 
 
 The "Mobile Logo" module needs a CSS class of "visible-phone".
 
