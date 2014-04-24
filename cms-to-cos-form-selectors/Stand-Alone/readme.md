@@ -6,10 +6,12 @@ These snippets will lay out all available form & button selectors for these migr
 
 Step 1
 ------------------------------------
-In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "Google Search Form" sub section.  Add the contents of Forms CSS AFTER that sub section.
+In CompanyStyle.css, scroll down to the "FORMS" section and find the "Google Search Form" sub section.  Add the contents of "Forms CSS" AFTER that sub section.
+
+If you want the forms to have some basic default styles, then instead use the code from "Forms Syled CSS".
 
 
 Step 2
 -----------------------------
-In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "CTA Buttons" sub section.  Add the contents of Buttons CSS AFTER that sub section.
+In CompanyStyle.css, scroll down to the "BUTTONS" section and find the "CTA Buttons" sub section.  Add the contents of "Buttons CSS" AFTER that sub section.
 
