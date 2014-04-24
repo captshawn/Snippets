@@ -1,0 +1,47 @@
+/* Follow Me Widget */
+
+.widget-type-follow_me {
+}
+
+/* Global Social Icons Selector */
+
+.widget-type-follow_me .cell-wrapper div span {
+     background: url('http://') !important;
+     height: 1px !important;
+     width: 1px !important;
+     filter: none !important;
+}
+
+/* Unique Social Icon Selectors */
+
+/* Youtube */
+.widget-type-follow_me .cell-wrapper .fm_youtube span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_youtube:hover span { background-position: 0px 0px !important; }
+
+/* Facebook */
+.widget-type-follow_me .cell-wrapper .fm_facebook span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_facebook:hover span { background-position: 0px 0px !important; }
+
+/* Twitter */
+.widget-type-follow_me .cell-wrapper .fm_twitter span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_twitter:hover span { background-position: 0px 0px !important; }
+
+/* LinkedIn*/
+.widget-type-follow_me .cell-wrapper .fm_linkedin span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_linkedin:hover span { background-position: 0px 0px !important; }
+
+/* RSS */
+.widget-type-follow_me .cell-wrapper .fm_rss span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_rss:hover span { background-position: 0px 0px !important; }
+
+/* Pinterest */
+.widget-type-follow_me .cell-wrapper .fm_pinterest span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_pinterest:hover span { background-position: 0px 0px !important; }
+
+/* Google Plus */
+.widget-type-follow_me .cell-wrapper .fm_googleplus span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_googleplus:hover span { background-position: 0px 0px !important; }
+
+/* Xing */
+.widget-type-follow_me .cell-wrapper .fm_xing span { background-position: 0px 0px !important; }
+.widget-type-follow_me .cell-wrapper .fm_xing:hover span { background-position: 0px 0px !important; }
