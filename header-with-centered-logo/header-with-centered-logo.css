@@ -14,3 +14,6 @@
     padding-left: 0;
     max-width: none;
 }
+.custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4) > a { /* use nth child to target the logo link from the site map */
+    content: url('http://www.hubspot.com/image.png');
+}

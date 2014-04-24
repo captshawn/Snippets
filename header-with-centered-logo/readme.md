@@ -12,17 +12,11 @@ Within your global header module, create a "Logo" module stacked on top of a "Ho
 
 The "Mobile Logo" module needs a CSS class of "visible-phone".
 
-![alt tag](centered-header-logo-css.png) 
-
 The "Horizontal Top Menu" module needs a CSS class of "custom-menu-primary".
-
-![alt tag](custom-menu-primary.png) 
 
 Step 2
 ------
-Create a new item in your site map and position it to the very center of the list.  In the "name" input field for that item, add an html image tag that displays your uploaded logo image.  This logo will display only for desktop.
-
-![alt tag](site-map.png) 
+Create a new item in your site map and position it to the very center of the list.  Set the link's display name as the company name and have it link to the homepage.
 
 Step 3
 ------
@@ -38,5 +32,5 @@ Add the Mobile CSS to the "max-width: 767px" media query section of the boilerpl
 
 Step 6
 ------
-In the code that was added in step 5, update the nth child value so it matches the index of the li that contains the logo.
+In the code that was added in step 3 and in 5, update the :nth-child values for ".custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4) > a" so it matches the index of the li that contains the logo.
 
