@@ -7,3 +7,5 @@ This snippet will provide commonly used macros for CSS3 properties that require 
 Step 1
 ------
 Copy the macros that you need and paste them to the Macros section of the boilerplate CompanyStyle.css file.
+
+![alt tag](jinja-macros.png) 
