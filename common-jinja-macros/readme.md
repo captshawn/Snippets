@@ -8,4 +8,6 @@ Step 1
 ------
 Copy the macros that you need and paste them to the Macros section of the boilerplate CompanyStyle.css file.
 
-![alt tag](jinja-macros.png) 
+Step 2
+------
+Apply your macro to any of your CSS selectors by utilizing the example jinja code located in the comments for each macro.
