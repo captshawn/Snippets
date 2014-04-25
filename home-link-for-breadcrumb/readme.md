@@ -13,3 +13,5 @@ Add a Horizontal Top Menu module to one of your templates, and in it's Module Op
 Step 2
 ------
 Add the JS to your boilerplate CompanyMain.js file. Make sure it is inside of the document ready function.
+
+![alt tag](main-js.png) 
