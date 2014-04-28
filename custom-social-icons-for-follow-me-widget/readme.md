@@ -11,11 +11,13 @@ Custom Icons:
 Step 1
 ------
 In the Template Builder add a Follow Me module to a template.
+
 ![alt tag](follow-me-module.png) 
 
 Step 2
 ------ 
 In the COS Social Settings, ensure social accounts have been added and checked off for the "Follow Me" option.
+
 ![alt tag](social-settings.png) 
 
 Step 3
