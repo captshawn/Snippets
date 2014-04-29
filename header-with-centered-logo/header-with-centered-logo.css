@@ -16,4 +16,8 @@
 }
 .custom-menu-primary .hs-menu-wrapper >ul > li:nth-child(4) > a { /* use nth child to target the logo link from the site map */
     content: url('http://www.hubspot.com/image.png');
+    max-width: 100%;
+}
+.mobile-logo {
+    text-align: center;
 }
