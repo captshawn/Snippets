@@ -1,0 +1,20 @@
+/* BLOG WITH LEFT SIDEBAR THAT STACKS BELOW CONTENT ON MOBILE */
+.blog-content {
+  margin-right: 0 !important;
+  float: right !important;
+}
+.blog-sidebar {
+  margin-left: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .blog-content {
+    margin-left: 0 !important;
+    }
+    
+    .blog-content,
+    .blog-sidebar {
+    width: 100% !important;
+    float: none !important;
+    }
+}  
