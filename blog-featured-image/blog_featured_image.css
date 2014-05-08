@@ -1,0 +1,18 @@
+.hs-featured-image-link {
+    border: 0;
+}
+
+.hs-featured-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 50%;
+    max-width: 100%;
+}
+
+@media (max-width: 568px) {
+    .hs-featured-image {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+}
