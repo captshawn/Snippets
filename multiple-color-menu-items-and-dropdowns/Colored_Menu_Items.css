@@ -1,0 +1,118 @@
+/*---------------------Common Menu Style-------------*/
+.hs-menu-wrapper {}
+.hs-menu-wrapper > ul {
+    display:block !important;
+}
+.hs-menu-wrapper > ul > li {}
+.hs-menu-wrapper > ul > li > a{
+    display:block !important;
+    max-width:100% !important;
+}
+.hs-menu-wrapper  ul  li  a {}
+.hs-menu-wrapper  ul  li  a:hover {}
+.hs-menu-wrapper > ul > li > a:hover {}
+.hs-menu-wrapper  ul li.hs-item-has-children {}
+.hs-menu-wrapper ul ul {
+    padding-left:0;
+    border-top:solid 5px #548891;
+    background:#fff;
+}
+.hs-menu-wrapper ul ul li{
+    border-left:1px solid #D9D9D9;
+    border-right:1px solid #D9D9D9;
+    border-bottom:1px dashed #D9D9D9;
+}
+.hs-menu-wrapper ul ul li a:last-child{
+    border-bottom:none;
+}
+.hs-menu-wrapper ul ul li a{
+     max-width: none !important;
+    width: auto !important;
+    background:none !important;
+    padding:5px 10px !important;
+    color: #333333 !important;
+    font-size: 14px !important;
+    border-bottom:1px dashed #D9D9D9;
+}
+.hs-menu-wrapper ul ul li a:hover{
+    background:#548891 !important;
+    color:#fff !important;
+}
+/*---------------------header top menu-------------------*/
+.header-container .hs-menu-flow-horizontal {
+.header-container .hs-menu-flow-horizontal > ul {
+    padding-left:0;
+}
+.header-container .hs-menu-flow-horizontal > ul > li {}
+.header-container .hs-menu-flow-horizontal > ul > li > a {
+    font-weight: 600;
+    padding: 15px 15px 30px 16px !important;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height:16px;
+    border-right:1px solid #D9D9D9;
+}
+.header-container .hs-menu-flow-horizontal > ul > li:last-child > a {
+    border:none;
+}
+.header-container .hs-menu-flow-horizontal > ul >li a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #548891;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(2) a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #d99c34;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(2) ul{
+    border-top: solid 5px #d99c34;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(2) ul li a:hover{
+        background:#d99c34 !important;
+    color:#fff !important;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(3) a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #3A5089;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(3) ul{
+    border-top: solid 5px #3A5089;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(3) ul li a:hover{
+        background:#3A5089 !important;
+    color:#fff !important;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(4) a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #5D369E;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(4) ul{
+    border-top: solid 5px #5D369E;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(4) ul li a:hover{
+        background:#5D369E !important;
+    color:#fff !important;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(5) a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #5C7D3B;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(5) ul{
+    border-top: solid 5px #5C7D3B;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(5) ul li a:hover{
+        background:#5C7D3B !important;
+    color:#fff !important;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(6) a:hover {
+    background:url(http://cdn2.hubspot.net/hub/322987/file-383229065-png/images/arrow.png) no-repeat center 40px #951b1f;
+    color:#fff;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(6) ul{
+    border-top: solid 5px #951b1f;
+}
+.header-container .hs-menu-flow-horizontal > ul >li:nth-child(6) ul li a:hover{
+        background:#951b1f !important;
+    color:#fff !important;
+}
+.header-container ul li.hs-item-has-children {}
