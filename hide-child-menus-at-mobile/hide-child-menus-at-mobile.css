@@ -1,0 +1,4 @@
+/* Hide Dropdowns at mobile */
+.hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper{
+    display: none !important;
+}
