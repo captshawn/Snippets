@@ -1,0 +1,18 @@
+/* Responsive Tables */
+@media (max-width: 767px) {
+    table {
+        width: 100% !important;
+    }
+    .responsive-table-mobile td {
+        display: block;
+        width: 100% !important;
+    }
+    .responsive-table-mobile img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .responsive-table-mobile {
+        table-layout:  fixed;
+    }
+}
