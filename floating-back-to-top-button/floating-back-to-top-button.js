@@ -1,4 +1,4 @@
-$('.footer-container-wrapper').after('<div id="back-to-top"><a href="#top"><span></span>Back To Top</div>');
+$('.footer-container-wrapper').after('<a id="back-to-top" href="#top"><span></span>Back To Top</a>');
 $("#back-to-top").hide();
 $(function () {
     $(window).scroll(function(){
