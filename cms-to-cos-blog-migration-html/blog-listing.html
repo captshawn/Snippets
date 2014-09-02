@@ -56,15 +56,13 @@
                             <a class="more-link" href="{{ content.absolute_url }}">Read More</a>
                         {% endif %}    
                     </div>
-                    <div class="custom_listing_comments">
-                        {% set comments_number =  content.comment_list|length %}
-                        {% if comments_number == 1 %}
-                            {% set comments_lable = "Comment" %}
-                        {% else %}
-                                {% set comments_lable = "Comments" %}
+                        {% if group.allow_comments %}
+                            <div class="custom_listing_comments">
+                                {% set comments_number =  content.comment_list|length %}
+                                {% set comments_label = "Comment" if comments_number == 1 else "Comments" %}
+                                {{ comments_number }} {{ comments_label }} <a href="{{content.absolute_url}}#comments-listing">Click here to read/write comments</a>
+                            </div>
                         {% endif %}
-                        {{ comments_number }} {{ comments_lable }} <a href="{{content.absolute_url}}#comments-listing">Click here to read/write comments</a>
-                    </div>
                         {% if content.topic_list %}
                              <p id="hubspot-topic_data"> Topics:
                                 {% for topic in content.topic_list %}
@@ -78,15 +76,16 @@
                 </div>
             {% endfor %}
         </div>
-
-        <div class="blog-pagination">
-            {% if last_page_num %}
-                <a class="previous-posts-link" href="{{ blog_page_link(last_page_num) }}">Previous</a>
-            {% endif %}
-                <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a>
-            {% if next_page_num %}
-                <a class="next-posts-link" href="{{ blog_page_link(next_page_num) }}">Next</a>
-            {% endif %}
-        </div>
+        {% if not simple_list_page %}
+            <div class="blog-pagination">
+                {% if last_page_num %}
+                    <a class="previous-posts-link" href="{{ blog_page_link(last_page_num) }}">Previous Page</a>
+                {% endif %}
+                    <a class="all-posts-link" href="{{ group.absolute_url }}/all">All Posts</a>
+                {% if next_page_num %}
+                    <a class="next-posts-link" href="{{ blog_page_link(next_page_num) }}">Next Page</a>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
 </div>
