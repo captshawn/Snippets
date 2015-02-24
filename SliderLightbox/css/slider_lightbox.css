@@ -1,0 +1,126 @@
+.featherlight {
+	display: none;
+
+	/* dimensions: spanning the background from edge to edge */
+	position:fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 9999;
+
+	/* position: centering content */
+	text-align: center;
+
+	/* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+	white-space: nowrap;
+
+	/* styling */
+	cursor: pointer;
+	background: #333;
+	/* IE8 "hack" for nested featherlights */
+	background: rgba(0, 0, 0, 0);
+
+	overflow: auto;
+}
+
+/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+.featherlight:last-of-type {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.featherlight:before {
+	/* position: trick to center content vertically */
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+.featherlight .featherlight-content {
+	/* make content container for positioned elements (close button) */
+	position: relative;
+
+	/* position: centering vertical and horizontal */
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+
+	/* dimensions: cut off images */
+	padding: 10px 10px 0;
+	border-bottom: 10px solid transparent;
+
+	/* dimensions: handling small or empty content */
+	min-width:  30%;
+
+	/* dimensions: handling large content */
+	margin-left: 5%;
+	margin-right: 5%;
+	max-height: 95%;
+
+	/* styling */
+	background: #fff;
+	cursor: auto;
+
+	/* reset white-space wrapping */
+	white-space: normal;
+}
+
+/* contains the content */
+.featherlight .featherlight-inner {
+	/* make sure its visible */
+	display: block;
+}
+
+.featherlight .featherlight-close-icon {
+	/* position: centering vertical and horizontal */
+	position: absolute;
+	z-index: 9999;
+	top: -10px;
+	right: -10px;
+
+	/* dimensions: 25px x 25px */
+	line-height: 25px;
+	width: 29px;
+
+	/* styling */
+	cursor: pointer;
+	text-align: center;
+	font-family: arial, sans-serif !important;
+	font-size: 16px;
+	background: #000; /* Set the background in case it overlaps the content */
+	color: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.featherlight .featherlight-image {
+	/* styling */
+	width: 100%;
+}
+
+
+.featherlight-iframe .featherlight-content {
+	/* removed the border for image croping since iframe is edge to edge */
+	border-bottom: 0;
+	padding: 0;
+}
+
+.featherlight iframe {
+	/* styling */
+	border: none;
+}
+
+/* handling phones and small screens */
+@media only screen and (max-width: {{maxWidth}}) {
+	.featherlight .featherlight-content {
+		/* dimensions: maximize lightbox with for small screens */
+		margin-left: 10px;
+		margin-right: 10px;
+		max-height: 98%;
+	}
+}
