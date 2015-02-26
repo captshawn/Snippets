@@ -1,0 +1,12 @@
+/* Anchors with spacing */
+.jump-target{
+    pointer-events: none;
+    background: none !important;
+}
+
+.jump-target:before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin: -60px 0 0;
+}
