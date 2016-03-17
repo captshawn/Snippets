@@ -1,6 +1,11 @@
+<!-- Infinite Scroll with Masonry plugin -->
+<script src='Add reference to InfiniteScroll-Masonry.js here'></script>
+
+<script>
 /**
  * Infinite Scroll + Masonry + ImagesLoaded
  */
+
 (function() {
 
     // Main content container
@@ -44,3 +49,4 @@
 	});
 
 })();
+</script>
