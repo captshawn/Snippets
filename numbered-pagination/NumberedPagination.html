@@ -25,7 +25,7 @@
     <div class="blog-pagination-right">
         {% if contents.total_page_count > 5 %}
             {% if contents.total_page_count - current_page_num > 2 %}
-                <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
+                <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ blog_page_link(contents.total_page_count) }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
                 <a href="{{ blog_page_link(contents.total_page_count) }}">{{ contents.total_page_count }}</a>
             {% endif %}
         {% endif %}   
