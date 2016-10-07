@@ -25,7 +25,7 @@
 		// selector for the paged navigation (it will be hidden)
 		navSelector  : ".blog-pagination",
 		// selector for the NEXT link (to page 2)
-		nextSelector : "a.next-posts-link:last'",
+		nextSelector : "a.next-posts-link:last",
 		// selector for all items you'll retrieve
 		itemSelector : ".blog-listing-wrapper > .post-listing > .post-item",
 
